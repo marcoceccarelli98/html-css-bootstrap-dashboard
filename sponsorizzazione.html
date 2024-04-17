@@ -11,131 +11,204 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <div class="row">
-            <!-- HEADER -->
-            <div class="d-md-none col-12">
-                <header>
-                    <nav class="navbar text-bg-dark" data-bs-theme="dark">
-                        <div class="container-fluid">
-                            <a class="navbar-brand text-white fw-semibold" href="#">Bootstrap Dashboard</a>
-                            <button class="navbar-toggler border-white border-2" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-disabled="true">Dashboard</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white fw-semibold active" aria-current="page"
-                                            href="sponsorizzazione.html">Sponsorizzazione</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="prodotti.html" class="nav-link">Prodotti</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="nuovo-prodotto.html" class="nav-link">Nuovo prodotto</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-disabled="true" href="#">Clienti</a>
-                                    </li>
-                                    <li class="nav-item mt-5">
-                                        <a class="nav-link" aria-disabled="true" href="#">Impostazioni</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-disabled="true" href="#">Profilo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-disabled="true" href="#">Esci</a>
-                                    </li>
+    <div class="container-fluid d-md-flex p-0">
+        <!-- ----- NAVIGATION ----- -->
+        <!-- HEADER -->
+        <div class="d-md-none">
+            <header>
+                <nav class="navbar text-bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white fw-semibold" href="#">Bootstrap Dashboard</a>
+                        <button class="navbar-toggler border-white border-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-disabled="true">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-semibold active" aria-current="page"
+                                        href="sponsorizzazione.html">Sponsorizzazione</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="prodotti.html" class="nav-link">Prodotti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="nuovo-prodotto.html" class="nav-link">Nuovo prodotto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-disabled="true" href="#">Clienti</a>
+                                </li>
+                                <li class="nav-item mt-5">
+                                    <a class="nav-link" aria-disabled="true" href="#">Impostazioni</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-disabled="true" href="#">Profilo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-disabled="true" href="#">Esci</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!-- SIDEBAR -->
+        <div class="d-none d-md-block p-0">
+            <div class="min-vh-100 w-100 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="min-width: 280px;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5">Bootstrap Dashboard</span>
+                </a>
+                <hr class="border-2">
+                <ul class="nav nav-pills flex-column mb-5">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white fw-semibold" aria-current="page">
+                            <svg class="bi pe-none" width="5" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            <i class="fas fa-house me-2"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sponsorizzazione.html" class="nav-link active">
+                            <svg class="bi pe-none" width="5" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            <i class="fas fa-chart-line me-2"></i>
+                            Sponsorizzazione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="prodotti.html" class="nav-link text-white fw-semibold">
+                            <svg class="bi pe-none" width="5" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            <i class="fas fa-box-archive me-2"></i>
+                            Prodotti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nuovo-prodotto.html" class="nav-link text-white fw-semibold">
+                            <svg class="bi pe-none" width="5" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            <i class="fas fa-plus me-2"></i>
+                            Nuovo prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white fw-semibold">
+                            <svg class="bi pe-none" width="5" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            <i class="fas fa-user-tie me-2"></i>
+                            Clienti
+                        </a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>Mario Rossi</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ----- PAGE ----- -->
+        <main class="container-fluid vh-100 d-flex px-5 overflow-y-scroll">
+            <div class="container-fluid m-auto bg-body-tertiary px-5 py-4">
+                <div class="col-12 col-lg-8 pricing-header mx-auto text-center">
+                    <h1 class="display-6 fw-semibold text-body-emphasis">Trova il piano perfetto per te!</h1>
+                    <p class="fs-5 text-body-secondary">Scegli tra le nostre opzioni di abbonamento e
+                        goditi
+                        funzionalità esclusive e performance migliori.</p>
+                    <p class="fs-5 fw-bold text-body-secondary">Porta la tua esperienza al livello successivo!</p>
+                    <div class="d-inline-flex gap-2 mb-5">
+                        <button
+                            class="d-inline-flex fw-semibold align-items-center btn btn-primary btn-lg px-4 rounded-pill"
+                            type="button">
+                            Scopri di più
+                        </button>
+                        <button class="btn btn-outline-secondary btn-l fs-5 fw-semibold px-4 rounded-pill"
+                            type="button">
+                            Contattaci
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Gratis</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">&euro; 0<small
+                                        class="text-body-secondary fw-light">/mese</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>10 utenti</li>
+                                    <li>2 GB di spazio</li>
+                                    <li>Pubblicità</li>
+                                    <li>Supporto email</li>
                                 </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Prosegui</button>
                             </div>
                         </div>
-                    </nav>
-                </header>
-            </div>
-            <!-- SIDEBAR -->
-            <div class="d-none d-md-block col-3 col-lg-4">
-                <div class="min-vh-100 w-100 d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
-                    style="max-width: 280px;">
-                    <a href="/"
-                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5">Bootstrap Dashboard</span>
-                    </a>
-                    <hr class="border-2">
-                    <ul class="nav nav-pills flex-column mb-5">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white fw-semibold" aria-current="page">
-                                <svg class="bi pe-none" width="5" height="16">
-                                    <use xlink:href="#home"></use>
-                                </svg>
-                                <i class="fas fa-house me-2"></i>
-                                Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="sponsorizzazione.html" class="nav-link active">
-                                <svg class="bi pe-none" width="5" height="16">
-                                    <use xlink:href="#speedometer2"></use>
-                                </svg>
-                                <i class="fas fa-chart-line me-2"></i>
-                                Sponsorizzazione
-                            </a>
-                        </li>
-                        <li>
-                            <a href="prodotti.html" class="nav-link text-white fw-semibold">
-                                <svg class="bi pe-none" width="5" height="16">
-                                    <use xlink:href="#table"></use>
-                                </svg>
-                                <i class="fas fa-box-archive me-2"></i>
-                                Prodotti
-                            </a>
-                        </li>
-                        <li>
-                            <a href="nuovo-prodotto.html" class="nav-link text-white fw-semibold">
-                                <svg class="bi pe-none" width="5" height="16">
-                                    <use xlink:href="#grid"></use>
-                                </svg>
-                                <i class="fas fa-plus me-2"></i>
-                                Nuovo prodotto
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white fw-semibold">
-                                <svg class="bi pe-none" width="5" height="16">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                <i class="fas fa-user-tie me-2"></i>
-                                Clienti
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="dropdown">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
-                                class="rounded-circle me-2">
-                            <strong>Mario Rossi</strong>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Premium</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">&euro; 15<small
+                                        class="text-body-secondary fw-light">/mese</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>50 utenti</li>
+                                    <li>10 GB di spazio</li>
+                                    <li>Senza pubblicità</li>
+                                    <li>Supporto email prioritario</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Prosegui</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">&euro; 29<small
+                                        class="text-body-secondary fw-light">/mese</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Utenti illimitati</li>
+                                    <li>Spazio illimitato</li>
+                                    <li>Senza pubblicità</li>
+                                    <li>Supporto via email e chat</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Prosegui</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-
+        </main>
     </div>
 
 
