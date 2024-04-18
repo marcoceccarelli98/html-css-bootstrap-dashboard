@@ -139,160 +139,166 @@
                         e non devono superare i 4 MB di dimensione
                     </p>
                 </div>
-                <div class="row g-5">
-                    <!-- FORM TEXT -->
-                    <form class="needs-validation" novalidate=""></form>
-                    <div class="col-12 col-lg-8">
-                        <div class="row g-3">
-                            <!-- NAME -->
-                            <div class="col-12 col-md-3 mt-0 lh-lg">
-                                <label for="firstName" class="form-label">Nome</label>
-                            </div>
-                            <div class="col-12 col-md-9 mt-0 mb-4">
-                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Valid first name is required.
+
+                <!-- FORM TEXT -->
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-5">
+                        <div class="col-12 col-lg-8">
+                            <div class="row g-3">
+                                <!-- NAME -->
+                                <div class="col-12 col-md-3 mt-0 lh-lg">
+                                    <label for="firstName" class="form-label">Nome</label>
+                                </div>
+                                <div class="col-12 col-md-9 mt-0 mb-4">
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+                                <!-- PRICE -->
+                                <div class="col-12 col-md-3 mt-0 lh-lg">
+                                    <label for="lastName" class="form-label">Prezzo</label>
+                                </div>
+                                <div class="col-12 col-md-9 mt-0 mb-4">
+                                    <input type="number" class="form-control" id="lastName" placeholder="" value=""
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+                                <!-- BRAND -->
+                                <div class="col-12 col-md-3 mt-0 lh-lg">
+                                    <label for="country" class="form-label">Marca</label>
+                                </div>
+                                <div class="col-12 col-md-9 mt-0 mb-4">
+                                    <select class="form-select" id="country" required="">
+                                        <option value="">--- Seleziona ---</option>
+                                        <option>Samsung</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid brand.
+                                    </div>
                                 </div>
                             </div>
-                            <!-- PRICE -->
-                            <div class="col-12 col-md-3 mt-0 lh-lg">
-                                <label for="lastName" class="form-label">Prezzo</label>
+                            <!-- TEXT AREA -->
+                            <textarea class="form-control mb-4"
+                                placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
+                                id="floatingTextarea2" rows="6"></textarea>
+                            <!-- INPUT FILE -->
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control fs-5" id="inputGroupFile02">
+                                <label class="input-group-text fs-5" for="inputGroupFile02">Immagine</label>
                             </div>
-                            <div class="col-12 col-md-9 mt-0 mb-4">
-                                <input type="number" class="form-control" id="lastName" placeholder="" value=""
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Valid last name is required.
+                            <!-- INPUT RADIO -->
+                            <div class="mb-3">
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="btnradio3">Fuori
+                                        produzione</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="btnradio4">In arrivo</label>
                                 </div>
                             </div>
-                            <!-- BRAND -->
-                            <div class="col-12 col-md-3 mt-0 lh-lg">
-                                <label for="country" class="form-label">Marca</label>
-                            </div>
-                            <div class="col-12 col-md-9 mt-0 mb-4">
-                                <select class="form-select" id="country" required="">
-                                    <option value="">--- Seleziona ---</option>
-                                    <option>Samsung</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid brand.
-                                </div>
-                            </div>
+
                         </div>
-                        <!-- TEXT AREA -->
-                        <textarea class="form-control mb-4"
-                            placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
-                            id="floatingTextarea2" rows="6"></textarea>
-                        <!-- INPUT FILE -->
-                        <div class="input-group mb-3">
-                            <input type="file" class="form-control fs-5" id="inputGroupFile02">
-                            <label class="input-group-text fs-5" for="inputGroupFile02">Immagine</label>
+
+                        <!-- CHECK-BOX -->
+                        <div class="col-12 col-lg-4 mt-0">
+                            <ul class="list-group mb-3">
+                                <li class="list-group-item d-flex justify-content-start lh-sm">
+                                    <div class="pe-2">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                            aria-label="...">
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0">fotocamera principale</h6>
+                                        <small class="text-body-secondary">foto di alta qualità e registrare video
+                                            nitidi</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-start lh-sm">
+                                    <div class="pe-2">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                            aria-label="...">
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0">schermo OLED</h6>
+                                        <small class="text-body-secondary">offre colori vividi per un'esperienza
+                                            visiva
+                                            straordinaria.</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-start lh-sm">
+                                    <div class="pe-2">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                            aria-label="...">
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0">processore Octa-core</h6>
+                                        <small class="text-body-secondary">prestazioni fluide e veloci per eseguire
+                                            le
+                                            applicazioni più
+                                            esigenti</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-start lh-sm">
+                                    <div class="pe-2">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                            aria-label="...">
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0">ricarica wireless</h6>
+                                        <small class="text-body-secondary">consente di ricaricare lo smartphone
+                                            comodamente
+                                            senza l'uso
+                                            di cavi</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-start lh-sm">
+                                    <div class="pe-2">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                            aria-label="...">
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0">connessione 5G</h6>
+                                        <small class="text-body-secondary">navigazione ultra veloce e streaming
+                                            senza
+                                            interruzioni</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-start lh-sm">
+                                    <div class="pe-2">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                            aria-label="...">
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0">tecnologia NFC</h6>
+                                        <small class="text-body-secondary">per effettuare pagamenti senza
+                                            contatto</small>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- INPUT RADIO -->
-                        <div class="mb-3">
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-secondary" for="btnradio3">Fuori
-                                    produzione</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                                <label class="btn btn-outline-secondary" for="btnradio4">In arrivo</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- CHECK-BOX -->
-                    <div class="col-12 col-lg-4 order-md-last mt-0">
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item d-flex justify-content-start lh-sm">
-                                <div class="pe-2">
-                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                        aria-label="...">
-                                </div>
-                                <div>
-                                    <h6 class="my-0">fotocamera principale</h6>
-                                    <small class="text-body-secondary">foto di alta qualità e registrare video
-                                        nitidi</small>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-start lh-sm">
-                                <div class="pe-2">
-                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                        aria-label="...">
-                                </div>
-                                <div>
-                                    <h6 class="my-0">schermo OLED</h6>
-                                    <small class="text-body-secondary">offre colori vividi per un'esperienza
-                                        visiva
-                                        straordinaria.</small>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-start lh-sm">
-                                <div class="pe-2">
-                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                        aria-label="...">
-                                </div>
-                                <div>
-                                    <h6 class="my-0">processore Octa-core</h6>
-                                    <small class="text-body-secondary">prestazioni fluide e veloci per eseguire
-                                        le
-                                        applicazioni più
-                                        esigenti</small>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-start lh-sm">
-                                <div class="pe-2">
-                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                        aria-label="...">
-                                </div>
-                                <div>
-                                    <h6 class="my-0">ricarica wireless</h6>
-                                    <small class="text-body-secondary">consente di ricaricare lo smartphone
-                                        comodamente
-                                        senza l'uso
-                                        di cavi</small>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-start lh-sm">
-                                <div class="pe-2">
-                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                        aria-label="...">
-                                </div>
-                                <div>
-                                    <h6 class="my-0">connessione 5G</h6>
-                                    <small class="text-body-secondary">navigazione ultra veloce e streaming
-                                        senza
-                                        interruzioni</small>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-start lh-sm">
-                                <div class="pe-2">
-                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                        aria-label="...">
-                                </div>
-                                <div>
-                                    <h6 class="my-0">tecnologia NFC</h6>
-                                    <small class="text-body-secondary">per effettuare pagamenti senza
-                                        contatto</small>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    </form>
-                </div>
-                <button class="w-25 btn btn-primary" type="submit">Salva</button>
+                        <button class="w-25 d-inline-block btn btn-primary" type="submit">Salva</button>
+                </form>
             </div>
+            <!-- <button class="w-25 btn btn-primary" type="submit">Salva</button> -->
         </main>
     </div>
+
+
 
 
 
